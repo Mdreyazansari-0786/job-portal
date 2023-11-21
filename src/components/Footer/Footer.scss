@@ -1,0 +1,100 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    color: gray;
+    
+
+    img{
+        width: 24px;
+        height: 24px;
+    }
+    .container{
+        width: 1400px;
+
+        .top{
+            display: flex;
+            justify-content: space-between;
+            .item{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                h2{
+                    font-size: 16px;
+                    color: black;
+                    transition: color 0.9 ease;
+                    
+                    &:hover{
+                        color: goldenrod;
+                        
+                        
+                    }
+                }
+                span {
+                    font-weight: 300;
+                    transition: color 0.3s ease; // Transition for span
+
+                    &:hover {
+                        color: rgb(245, 234, 25); // Change color on hover for span
+                    }
+                }
+            }
+            
+        }
+        hr{
+            margin: 50px 0px;
+            height: 0;
+            border: 1px solid gray;
+        }
+        .bottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .left{
+                align-items: center;
+                gap: 20px;
+                h2{
+                    cursor: pointer;
+                    &:hover{
+                        color: black;
+                    }
+                }
+                span{
+                    font-size: 13px;
+                    cursor: pointer;
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+            .right{
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                .social{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    
+                    cursor: pointer;
+                    img {
+                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                        color: blue;
+                
+                        &:hover {
+                            transform: scale(1.1); // Enlarge the image
+                            box-shadow: 0px 0px 15px rgba(232, 220, 220, 0.2); // Add a shadow
+                        }
+                    }
+
+                }
+                .link{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                   
+                }
+            }
+        }
+    }
+}
